@@ -1,5 +1,7 @@
 /*!
-   ADF4351 example program
+   ADF4351 transverter program
+   Arduino Pro / Pro mini
+   ATMega 328P / 3.3V 8MHz
 */
 
 #include <Arduino.h>
@@ -10,6 +12,7 @@
 #define PIN_SS 10  ///< SPI slave select pin, default value
 
 ADF4351  vfo(PIN_SS, SPI_MODE0, 1000000UL , MSBFIRST) ;
+
 
 
 void setup()
@@ -68,5 +71,4 @@ void setup()
 
 void loop()
 {
-
 }

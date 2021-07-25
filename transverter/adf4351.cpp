@@ -246,6 +246,8 @@ int  ADF4351::setf(uint32_t freq)
   R[2].setbf(24, 1, RD1Rdiv2)  ; // RD1_RDiv2
   R[2].setbf(25, 1, RD2refdouble)  ; // RD2refdouble
   // R[2].setbf(26,3,0) ; //  muxout, not used
+  // yeah well it's used now
+  R[2].setbf(26,3,6) ; //  muxout, digital lock detect
   // (29,2,0) low noise and spurs mode
   // R3
   R[3].set(0UL) ;
